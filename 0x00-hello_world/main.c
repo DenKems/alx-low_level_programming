@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void0
-		{
-		  return (0);
-		  }
+int main(void)
+{
+   return (0);
+}
