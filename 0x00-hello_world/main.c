@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+   puts("Programming is good");	
    return (0);
 }
