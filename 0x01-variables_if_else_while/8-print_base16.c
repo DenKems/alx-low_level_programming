@@ -7,16 +7,16 @@
 int main(void)
 {
 	int hex;
-	char alp;
+	char by;
 
 	for (hex = 0; hex < 10; hex++)
 	{
 		putchar((hex % 10) + '0');
 	}
 
-	for (alp = 'a'; alp = 'f'; alp++)
+	for (by = 'a'; by = 'f'; by++)
 	{
-		putchar(alp);
+		putchar(by);
 	}
 	putchar('\n');
 	return (0);
