@@ -14,7 +14,7 @@ int main(void)
 		putchar((hex % 10) + '0');
 	}
 
-	for (by = 'a'; by = 'f'; by++)
+	for (by = 'a'; by <= 'f'; by++)
 	{
 		putchar(by);
 	}
