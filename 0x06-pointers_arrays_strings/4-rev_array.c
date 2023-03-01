@@ -9,14 +9,13 @@
 void reverse_array(int *a, int n)
 {
 	int i;
+	int j;
 
-	while (i = 0; i < n)
+	for (i = 0; i < n; i++)
 	{
-		i++;
+		n--;
+		j = a[i];
+		a[i] = a[n];
+		a[n] = j;
 	}
-	while (i >= 0; i--)
-	{
-		_putchar(a[i]);
-	}
-	_putchar('\n');
 }
