@@ -13,9 +13,9 @@ char *string_toupper(char *abc)
 	i = 0;
 	while (abc[i] != '\0')
 	{
-		if (abc[i] == 'a..z')
+		if (abc[i] >= 'a' && abc[i] <= 'z')
 		{
-			abc[i] = 'A..Z'
+			abc[i] = abc[i] - 32;
 		}
 		i++;
 	}
