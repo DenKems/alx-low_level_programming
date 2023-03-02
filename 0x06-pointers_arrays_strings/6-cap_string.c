@@ -5,7 +5,7 @@
 * @abc: pointer of string
 * Return: Return character
 */
-char cap_string(char *abc)
+char *cap_string(char *abc)
 {
 	int i;
 
