@@ -23,5 +23,5 @@ char *leet(char *abc)
 			}
 		}
 	}
-	return (abc)
+	return (abc);
 }
