@@ -17,9 +17,9 @@ char *leet(char *abc)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (abc[i] == str1[i])
+			if (abc[i] == str1[j])
 			{
-				abc[i] = str2[i];
+				abc[i] = str2[j];
 			}
 		}
 	}
