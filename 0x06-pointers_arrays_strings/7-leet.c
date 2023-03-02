@@ -13,16 +13,14 @@ char *leet(char *abc)
 	char str1[] = "aAeEoOtTlL";
 	char str2[] = "4433007711";
 
-	while (abc[i] != '\0')
+	for (abc[i] != '\0'; i++)
 	{
-		i++;
-		while (j < 10)
+		while (j < 10; j++)
 		{
 			if (abc[i] == str1[i])
 			{
 				abc[i] = str2[i];
 			}
-			j++;
 		}
 	}
 	return (abc)
