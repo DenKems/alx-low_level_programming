@@ -15,6 +15,7 @@ char *leet(char *abc)
 
 	while (abc[i] != '\0')
 	{
+		i++;
 		while (j < 10)
 		{
 			if (abc[i] == str1[i])
@@ -23,7 +24,6 @@ char *leet(char *abc)
 			}
 			j++;
 		}
-		i++;
 	}
 	return (abc)
 }
