@@ -1,7 +1,5 @@
 #include "main.h"
 
-int pre_prime_number(int n, int i);
-
 /**
  * is_prime_number - Function deermines whether a number
  * is a prime number or not
@@ -10,22 +8,19 @@ int pre_prime_number(int n, int i);
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (actual_prime(n, n - 1));
-}
+	int _is_prime = 0;
 
-/**
- * pre_prime_number - function determines if a number is prime using recursion
- * @n: number to be evaluated
- * @i: integers to test
- * Return: returns 1 if n is prime or 0 if not
- */
-int pre_prime_number(int n, int i)
-{
-	if (i == 1)
-		return (1);
-	if (n % i == 0 && i > 0)
-		return (0);
-	return (actual_prime(n, i - 1));
+	if (n < 2)
+	{
+		_is_prime = 0;
+	}
+	else if (n == 2)
+	{
+		_is_prime = 1;
+	}
+	else if (n % 2 == 1)
+	{
+		_is_prime = 1;
+	}
+	return (_is_prime);
 }
