@@ -18,7 +18,7 @@ int check_num(char *str)
 		{
 			return (0);
 		}
-		count++;
+		i++;
 	}
 	return (1);
 }
