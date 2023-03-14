@@ -27,6 +27,7 @@ char *argstostr(int ac, char **av)
 	x += ac;
 
 	allconcat = malloc(sizeof(char) * x + 1);
+
 	if (allconcat == NULL)
 	{
 		return (NULL);
