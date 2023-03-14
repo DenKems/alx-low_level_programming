@@ -41,10 +41,9 @@ char *argstostr(int ac, char **av)
 			allconcat[a] = av[i][k];
 			a++;
 		}
+		allconcat[a] = '\n';
+		a++;
 	}
-	if (allconcat[a] == '\0')
-	{
-		allconcat[a++] = '\n';
-	}
+
 	return (allconcat);
 }
