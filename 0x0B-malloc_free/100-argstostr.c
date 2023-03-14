@@ -9,7 +9,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i, j, k;
-	int a, x = 0;
+	int a = 0, x = 0;
 	char *allconcat;
 
 	if (ac == 0 || av == NULL)
@@ -24,6 +24,7 @@ char *argstostr(int ac, char **av)
 			x++;
 		}
 	}
+
 	x += ac;
 
 	allconcat = malloc(sizeof(char) * x + 1);
