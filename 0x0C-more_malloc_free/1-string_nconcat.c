@@ -13,10 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i = 0, j = 0, num1 = 0, num2 = 0;
 	char *memory;
 
-	while (s1 && s1[num1] != '\0')
+	while (s1 && s1[num1])
 		num1++;
 
-	while (s2 && s2[num2] != '\0')
+	while (s2 && s2[num2])
 		num2++;
 
 	if (n >= num2)
