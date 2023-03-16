@@ -25,9 +25,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		num2++;
 
 	if (n < num2)
-		memory = malloc(sizeof(char) * (num1 + n + 1));
+		memory = malloc(num1 + n + 1);
 	else
-		memory = malloc(sizeof(char) * (num1 + num2 + 1);
+		memory = malloc(num1 + num2 + 1);
 
 	if (memory == NULL)
 		return (NULL);
