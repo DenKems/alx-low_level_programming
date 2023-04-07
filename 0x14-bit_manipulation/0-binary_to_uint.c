@@ -8,25 +8,17 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int unit = 0;
-	unsigned int n = 0, i;
+	int i;
 
 	if (b == NULL)
 		return (0);
 
-	while (b)
-	{
-		n++;
-	}
-
-
 	for (i = 0; b[i]; i++)
 	{
-		if (b[i] != '0' || b[i] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
 
-		unit = unit + ((b[i] - '0') * (2 ^ n));
-		n--;
+		unit = (2 * unit) + (b[i] - '0');
 	}
-
 	return (unit);
 }
