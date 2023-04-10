@@ -4,11 +4,14 @@
 * create_file - function creates a file
 * @filename: name of file
 * @text_content: content to write in the file
+*
 * Return: 1(Success) or -1(Failure)
 */
 int create_file(const char *filename, char *text_content)
 {
-	int fildes, i, count;
+	int fildes;
+	int  i;
+	int  count;
 
 	if (!filename)
 		return (-1);
