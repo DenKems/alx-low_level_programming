@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * print_times_table - function prints the n times table, starting with 0
 * @n: the nth type of timetable to print
@@ -40,11 +39,11 @@ void print_times_table(int n)
 					_putchar((num % 100) / 10 + '0');
 					_putchar((num % 100) % 10 + '0');
 				}
-				if (j == n)
-					_putchar('\n');
 			}
 			else
 				_putchar(num + '0');
+			if (j == n)
+				_putchar('\n');
 		}
 	}
 }
