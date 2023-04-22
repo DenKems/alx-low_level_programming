@@ -14,7 +14,7 @@ size_t loop_listint_num(const listint_t *head)
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
-		return (0);
+		exit(98);
 	first = head->next;
 	second = (head->next)->next;
 	while (second)
